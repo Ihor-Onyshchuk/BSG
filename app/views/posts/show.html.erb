@@ -18,7 +18,7 @@
 <p>
   <strong>Image:</strong>
   <br>
-  <%= image_tag @post.image.url(:thumb) %>
+  <%= image_tag @post.image.url(:thumb).to_s %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
